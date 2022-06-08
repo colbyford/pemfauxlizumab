@@ -1,6 +1,6 @@
 # _Pemfauxlizumab_: Pembrolizumab-like Antibody Hallucination using AlphaFold2
 
-## Companion Repository for: [Am I Hallucinating or Can AI Now Design Cancer-Curing Antibodies?](https://medium.com/@colbyford/am-i-hallucinating-or-can-ai-now-design-cancer-curing-antibodies-3ef1bef92106)
+## Companion Repository for: [Am I Hallucinating or Can AI Now Design Cancer-Curing Antibodies?](https://colbyford.medium.com/am-i-hallucinating-or-can-ai-now-design-cancer-curing-antibodies-3ef1bef92106)
 
 <h3 align="right">Colby T. Ford, Ph.D.</h3>
 

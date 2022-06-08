@@ -1,0 +1,21 @@
+### Determine 5XJE Active Residues in PyMol
+
+1. Pull PDB 5JXE and keep only chains A, B, and C
+2. Run _File_ > _Run Script..._ and open the InterfaceResidues.py script
+3. Run `interfaceResidue 5jxe, chain C, chain B`
+4. Run `interfaceResidue 5jxe, chain D, chain B`
+5. Capture interfacing residues on Chain B (PD-1): `62,63,64,66,68,75,76,77,78,79,82,83,84,85,86,87,88,89,90,126,127,128,134`
+6. Capture interfacing residues on Chain C (Pembrolizumab Fab Light Chain): `31,32,33,34,36,53,54,57,95,96,97,98,100`
+7. Capture interfacing residues on Chain D (Pembrolizumab Fab Heavy Chain) + 500 to residue numbers: `30,31,33,35,51,52,54,55,57,58,59,99,101,102,103,104,105`
+8. Add 500 to residues numbers of Chain D `alter chain D, resi=500+int(resi)`: `530,531,533,535,551,552,554,555,557,558,559,599,601,602,603,604,605`
+- Active PD-1 Residues: `62,63,64,66,68,75,76,77,78,79,82,83,84,85,86,87,88,89,90,126,127,128,134`
+- Active Fab Residues: `31,32,33,34,36,53,54,57,95,96,97,98,100,530,531,533,535,551,552,554,555,557,558,559,599,601,602,603,604,605`
+
+
+### Determine Potential Active Residues of Pemfauxlizumab
+
+1. Open pemfaux_fab.pdb and align to 5JXE structure.
+2. Mark aligned active residues from 5JXE Fab Chain C for Chain A: `31,32,33,34,36,53,54,57,95,96,97,98,100`
+3. Mark aligned active residues from 5JXE Fab Chain D for Chain B: `30,31,33,35,51,52,54,55,57,58,59,99,101,102,103,104,105`
+4. Add 500 to residues numbers of Chain B `alter chain B, resi=500+int(resi)`: `530,531,533,535,551,552,554,555,557,558,559,599,601,602,603,604,605`
+- Active Fab Residues: `31,32,33,34,36,53,54,57,95,96,97,98,100,530,531,533,535,551,552,554,555,557,558,559,599,601,602,603,604,605`
